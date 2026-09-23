@@ -1,0 +1,17 @@
+{
+  "name": "Paciência",
+  "short_name": "Paciência",
+  "description": "Jogo de cartas Paciência.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#075e54",
+  "theme_color": "#075e54",
+  "icons": [
+    {
+      "src": "/patience.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
