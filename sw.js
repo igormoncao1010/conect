@@ -1,5 +1,5 @@
-const CACHE = 'paciencia-shell-v21';
-const APP_SHELL = ['/', '/group-calls.js', '/manifest.webmanifest', '/patience.png'];
+const CACHE = 'paciencia-shell-v22';
+const APP_SHELL = ['/', '/group-calls.js', '/chat-presence.js', '/manifest.webmanifest', '/patience.png'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(APP_SHELL)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', event => {
